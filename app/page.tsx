@@ -10,7 +10,7 @@ const Home = () => {
   async function getData() {
     try {
       const response = await fetch(
-        `http://www.omdbapi.com/?t=${name}&apikey=2f8ee33a&plot=full`, {
+        `https://www.omdbapi.com/?t=${name}&apikey=2f8ee33a&plot=full`, {
           next: { revalidate: 15 }
         }
       );
